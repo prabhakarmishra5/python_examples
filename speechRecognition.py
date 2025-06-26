@@ -11,7 +11,7 @@ with sr.Microphone() as source:
     print("Please speak something...")
     recognizer.adjust_for_ambient_noise(source)  # Adjust for background noise
     try:
-        # Capture audio from the microphone
+        # Get audio from the microphone
         audio = recognizer.listen(source)
         print("Recognizing...")
         # Convert speech to text
